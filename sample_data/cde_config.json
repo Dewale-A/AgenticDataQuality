@@ -1,0 +1,68 @@
+{
+  "dataset": "customers.csv",
+  "description": "Customer master data for retail banking",
+  "critical_data_elements": [
+    {
+      "field": "customer_id",
+      "business_definition": "Unique identifier for each customer",
+      "data_owner": "Customer Data Management",
+      "regulatory_requirement": "KYC/AML",
+      "expected_format": "CUSTXXX",
+      "nullable": false,
+      "unique": true
+    },
+    {
+      "field": "email",
+      "business_definition": "Primary contact email for customer communications",
+      "data_owner": "Marketing",
+      "regulatory_requirement": "GDPR",
+      "expected_format": "valid email",
+      "nullable": false,
+      "unique": true
+    },
+    {
+      "field": "date_of_birth",
+      "business_definition": "Customer date of birth for age verification",
+      "data_owner": "Compliance",
+      "regulatory_requirement": "KYC",
+      "expected_format": "YYYY-MM-DD",
+      "nullable": false,
+      "unique": false,
+      "validation": {
+        "min_date": "1900-01-01",
+        "max_date": "today"
+      }
+    },
+    {
+      "field": "account_balance",
+      "business_definition": "Current account balance in USD",
+      "data_owner": "Finance",
+      "regulatory_requirement": "SOX",
+      "expected_format": "numeric",
+      "nullable": false,
+      "unique": false,
+      "validation": {
+        "min_value": 0
+      }
+    },
+    {
+      "field": "credit_score",
+      "business_definition": "Customer credit score for risk assessment",
+      "data_owner": "Risk Management",
+      "regulatory_requirement": "FCRA",
+      "expected_format": "integer 300-850",
+      "nullable": false,
+      "unique": false,
+      "validation": {
+        "min_value": 300,
+        "max_value": 850
+      }
+    }
+  ],
+  "quality_thresholds": {
+    "cde_completeness": 0.99,
+    "cde_validity": 0.99,
+    "non_cde_completeness": 0.90,
+    "non_cde_validity": 0.95
+  }
+}

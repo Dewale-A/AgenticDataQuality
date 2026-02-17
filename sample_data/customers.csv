@@ -1,0 +1,16 @@
+customer_id,first_name,last_name,email,phone,date_of_birth,account_balance,credit_score,address,zip_code,registration_date,status
+CUST001,John,Smith,john.smith@email.com,555-123-4567,1985-03-15,15420.50,742,123 Main St,10001,2020-01-15,active
+CUST002,Sarah,Johnson,sarah.j@email.com,555-234-5678,1990-07-22,8750.25,698,456 Oak Ave,90210,2019-06-20,active
+CUST003,Michael,Williams,,555-345-6789,1978-11-08,32100.00,815,789 Pine Rd,60601,2018-03-10,active
+CUST004,Emily,Brown,emily.brown@email.com,,1995-02-28,-500.00,580,321 Elm St,30301,2021-09-05,suspended
+CUST005,David,Jones,invalid-email,555-456-7890,1982-09-14,12300.75,665,654 Maple Dr,75201,2020-11-30,active
+CUST006,Jennifer,Garcia,jen.garcia@email.com,555-567-8901,2025-12-01,45000.00,720,987 Cedar Ln,98101,2017-04-25,active
+CUST007,Robert,Martinez,robert.m@email.com,555-678-9012,1988-06-30,0.00,701,147 Birch Way,33101,2022-02-14,active
+CUST008,Lisa,Anderson,lisa.anderson@email.com,555-789-0123,1975-04-18,28900.50,758,258 Spruce Ave,85001,2019-08-08,active
+CUST009,James,Taylor,james.t@email.com,invalid-phone,1992-01-25,6200.00,632,369 Walnut St,48201,2021-05-17,active
+CUST010,Amanda,Thomas,amanda.thomas@email.com,555-890-1234,1987-08-12,18750.25,689,471 Ash Blvd,80201,2020-07-03,active
+CUST011,John,Smith,john.smith@email.com,555-123-4567,1985-03-15,15420.50,742,123 Main St,10001,2020-01-15,active
+CUST012,Christopher,Lee,,555-901-2345,,9500.00,645,582 Cherry Ct,94101,2018-12-20,inactive
+CUST013,Michelle,White,michelle.w@email.com,555-012-3456,1983-10-05,22100.00,712,693 Peach Rd,77001,2019-02-28,active
+CUST014,Daniel,Harris,daniel.harris@email.com,555-123-4568,1991-05-17,3200.50,598,804 Plum Ave,19101,2022-06-10,active
+CUST015,Jessica,Clark,jessica.clark@email.com,555-234-5679,1979-12-22,67500.00,801,915 Apple St,02101,2016-09-15,active
