@@ -1,167 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600">
   <defs>
+    <linearGradient id="profilerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="validatorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="anomalyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#D97706"/>
+    </linearGradient>
+    <linearGradient id="writerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="editorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899"/>
+      <stop offset="100%" style="stop-color:#DB2777"/>
+    </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
     </filter>
-    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4A90D9;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#5CB85C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#449D44;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8E44AD;stop-opacity:1" />
-    </linearGradient>
   </defs>
   
-  <!-- Background -->
-  <rect width="1200" height="600" fill="#FAFBFC"/>
+  <rect width="1100" height="600" fill="#F8FAFC"/>
   
-  <!-- Title -->
-  <text x="600" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#2C3E50" text-anchor="middle">Agentic Policy Compliance System</text>
-  <text x="600" y="65" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#7F8C8D" text-anchor="middle">Multi-Agent AI Architecture for Automated Compliance Analysis</text>
+  <text x="550" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1E293B">AgenticDataQuality - Multi-Agent Architecture</text>
+  <text x="550" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#64748B">Autonomous Data Quality Assessment System</text>
   
-  <!-- Column Headers -->
-  <text x="100" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#5D6D7E">Input</text>
-  <text x="420" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#5D6D7E">Specialized Agents</text>
-  <text x="750" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#5D6D7E">Tools</text>
-  <text x="1000" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#5D6D7E">Knowledge</text>
+  <rect x="30" y="120" width="130" height="140" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="95" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569">INPUT</text>
+  <text x="95" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748B">CSV Data</text>
+  <text x="95" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748B">CDE Config</text>
+  <text x="95" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748B">Thresholds</text>
+  <text x="95" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8">--data file.csv</text>
   
-  <!-- Input: Policy Documents -->
-  <g filter="url(#shadow)">
-    <rect x="40" y="150" width="160" height="90" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
-    <text x="65" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="28">📁</text>
-    <text x="100" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Policy</text>
-    <text x="100" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Documents</text>
-  </g>
+  <rect x="200" y="100" width="150" height="70" rx="35" fill="url(#profilerGrad)" filter="url(#shadow)"/>
+  <circle cx="240" cy="135" r="16" fill="white" fill-opacity="0.2"/>
+  <text x="240" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">1</text>
+  <text x="305" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Data</text>
+  <text x="305" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Profiler</text>
   
-  <!-- Input document types -->
-  <g filter="url(#shadow)">
-    <rect x="50" y="260" width="60" height="35" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
-    <text x="80" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#2C3E50" text-anchor="middle">PDF</text>
-  </g>
-  <g filter="url(#shadow)">
-    <rect x="120" y="260" width="60" height="35" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
-    <text x="150" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#2C3E50" text-anchor="middle">DOCX</text>
-  </g>
-  <g filter="url(#shadow)">
-    <rect x="50" y="305" width="60" height="35" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
-    <text x="80" y="327" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#2C3E50" text-anchor="middle">TXT</text>
-  </g>
-  <g filter="url(#shadow)">
-    <rect x="120" y="305" width="60" height="35" rx="4" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1"/>
-    <text x="150" y="327" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#2C3E50" text-anchor="middle">MD</text>
-  </g>
+  <rect x="200" y="190" width="150" height="70" rx="35" fill="url(#validatorGrad)" filter="url(#shadow)"/>
+  <circle cx="240" cy="225" r="16" fill="white" fill-opacity="0.2"/>
+  <text x="240" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">2</text>
+  <text x="305" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Data</text>
+  <text x="305" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Validator</text>
   
-  <!-- Output: Compliance Report -->
-  <g filter="url(#shadow)">
-    <rect x="40" y="420" width="160" height="90" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
-    <text x="65" y="455" font-family="Segoe UI, Arial, sans-serif" font-size="28">📋</text>
-    <text x="100" y="455" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Compliance</text>
-    <text x="100" y="472" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Report</text>
-  </g>
+  <rect x="200" y="280" width="150" height="70" rx="35" fill="url(#anomalyGrad)" filter="url(#shadow)"/>
+  <circle cx="240" cy="315" r="16" fill="white" fill-opacity="0.2"/>
+  <text x="240" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">3</text>
+  <text x="305" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Anomaly</text>
+  <text x="305" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Detector</text>
   
-  <!-- Output details -->
-  <text x="50" y="535" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7F8C8D">• Executive Summary</text>
-  <text x="50" y="552" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7F8C8D">• Gap Analysis</text>
-  <text x="50" y="569" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7F8C8D">• Action Items</text>
+  <rect x="400" y="100" width="120" height="250" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569">TOOLS</text>
   
-  <!-- Flow Lines from Input -->
-  <path d="M 200 195 L 270 195 L 270 180 L 320 180" stroke="#BDC3C7" stroke-width="2" fill="none"/>
-  <path d="M 200 195 L 270 195 L 270 290 L 320 290" stroke="#BDC3C7" stroke-width="2" fill="none"/>
+  <rect x="415" y="140" width="90" height="30" rx="5" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="460" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#475569">Schema Analyzer</text>
   
-  <!-- Agent 1: Ingestion -->
-  <g filter="url(#shadow)">
-    <rect x="320" y="150" width="200" height="70" rx="35" fill="url(#blueGrad)"/>
-    <circle cx="360" cy="185" r="22" fill="white"/>
-    <text x="360" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">📥</text>
-    <text x="470" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">Document Ingestion</text>
-    <text x="470" y="198" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.8)" text-anchor="middle">Specialist Agent</text>
-  </g>
+  <rect x="415" y="180" width="90" height="30" rx="5" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="460" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#475569">CDE Identifier</text>
   
-  <!-- Agent 2: Analysis -->
-  <g filter="url(#shadow)">
-    <rect x="320" y="255" width="200" height="70" rx="35" fill="url(#greenGrad)"/>
-    <circle cx="360" cy="290" r="22" fill="white"/>
-    <text x="360" y="297" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">🔍</text>
-    <text x="470" y="283" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">Compliance Analyst</text>
-    <text x="470" y="303" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.8)" text-anchor="middle">Analysis Agent</text>
-  </g>
+  <rect x="415" y="220" width="90" height="30" rx="5" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="460" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#475569">Rule Validator</text>
   
-  <!-- Agent 3: Report -->
-  <g filter="url(#shadow)">
-    <rect x="320" y="360" width="200" height="70" rx="35" fill="url(#purpleGrad)"/>
-    <circle cx="360" cy="395" r="22" fill="white"/>
-    <text x="360" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="22" text-anchor="middle">📝</text>
-    <text x="470" y="388" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">Report Writer</text>
-    <text x="470" y="408" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.8)" text-anchor="middle">Synthesis Agent</text>
-  </g>
+  <rect x="415" y="260" width="90" height="30" rx="5" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="460" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#475569">Stats Calculator</text>
   
-  <!-- Agent connection lines -->
-  <path d="M 420 220 L 420 255" stroke="#BDC3C7" stroke-width="2" fill="none"/>
-  <path d="M 420 325 L 420 360" stroke="#BDC3C7" stroke-width="2" fill="none"/>
+  <rect x="415" y="300" width="90" height="30" rx="5" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="460" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#475569">IQR Detector</text>
   
-  <!-- Flow to output -->
-  <path d="M 320 395 L 270 395 L 270 465 L 200 465" stroke="#BDC3C7" stroke-width="2" fill="none"/>
+  <rect x="570" y="160" width="150" height="70" rx="35" fill="url(#writerGrad)" filter="url(#shadow)"/>
+  <circle cx="610" cy="195" r="16" fill="white" fill-opacity="0.2"/>
+  <text x="610" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">4</text>
+  <text x="675" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Report</text>
+  <text x="675" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Writer</text>
   
-  <!-- Tools Section -->
-  <g filter="url(#shadow)">
-    <rect x="600" y="150" width="220" height="55" rx="6" fill="white" stroke="#E0E0E0" stroke-width="1"/>
-    <text x="625" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">📄 Document Reader</text>
-  </g>
-  <text x="625" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#7F8C8D">Parse PDF, DOCX, TXT, Markdown</text>
+  <rect x="570" y="260" width="150" height="70" rx="35" fill="url(#editorGrad)" filter="url(#shadow)"/>
+  <circle cx="610" cy="295" r="16" fill="white" fill-opacity="0.2"/>
+  <text x="610" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">5</text>
+  <text x="675" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Senior Editor</text>
+  <text x="675" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white" fill-opacity="0.9">(GPT-4o)</text>
+  <text x="675" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white" fill-opacity="0.7">--polish flag</text>
   
-  <g filter="url(#shadow)">
-    <rect x="600" y="250" width="220" height="55" rx="6" fill="white" stroke="#E0E0E0" stroke-width="1"/>
-    <text x="625" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">🔎 Document Search</text>
-  </g>
-  <text x="625" y="325" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#7F8C8D">Semantic search within policies</text>
+  <rect x="770" y="120" width="130" height="180" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="835" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569">OUTPUT</text>
+  <text x="835" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">DQ Scorecard</text>
+  <text x="835" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">CDE Analysis</text>
+  <text x="835" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Issue Details</text>
+  <text x="835" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Recommendations</text>
+  <text x="835" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Executive Summary</text>
+  <text x="835" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8">Markdown Report</text>
   
-  <!-- Tool connection lines -->
-  <path d="M 520 185 L 600 177" stroke="#BDC3C7" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
-  <path d="M 520 185 L 600 277" stroke="#BDC3C7" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
-  <path d="M 520 290 L 600 277" stroke="#BDC3C7" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
+  <line x1="160" y1="170" x2="200" y2="135" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="160" y1="190" x2="200" y2="225" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="160" y1="210" x2="200" y2="315" stroke="#94A3B8" stroke-width="2"/>
   
-  <!-- Knowledge Base Section -->
-  <g filter="url(#shadow)">
-    <rect x="880" y="130" width="200" height="110" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
-    <text x="905" y="165" font-family="Segoe UI, Arial, sans-serif" font-size="28">⚖️</text>
-    <text x="945" y="163" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Regulatory</text>
-    <text x="945" y="180" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Frameworks</text>
-    <text x="905" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4A90D9">• GDPR</text>
-    <text x="905" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#5CB85C">• SOX</text>
-    <text x="970" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#9B59B6">• Basel III</text>
-    <text x="970" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#F0AD4E">• HIPAA</text>
-  </g>
+  <line x1="350" y1="135" x2="400" y2="155" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4"/>
+  <line x1="350" y1="225" x2="400" y2="235" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4"/>
+  <line x1="350" y1="315" x2="400" y2="305" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4"/>
   
-  <g filter="url(#shadow)">
-    <rect x="880" y="260" width="200" height="110" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
-    <text x="905" y="295" font-family="Segoe UI, Arial, sans-serif" font-size="28">📚</text>
-    <text x="945" y="293" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Policy</text>
-    <text x="945" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Templates</text>
-    <text x="905" y="335" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7F8C8D">• Data Governance</text>
-    <text x="905" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7F8C8D">• Risk Management</text>
-  </g>
+  <line x1="520" y1="225" x2="570" y2="195" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="645" y1="230" x2="645" y2="260" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="720" y1="195" x2="770" y2="180" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="720" y1="295" x2="750" y2="295" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="750" y1="295" x2="750" y2="220" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="750" y1="220" x2="770" y2="220" stroke="#94A3B8" stroke-width="2"/>
   
-  <g filter="url(#shadow)">
-    <rect x="880" y="390" width="200" height="90" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
-    <text x="905" y="425" font-family="Segoe UI, Arial, sans-serif" font-size="28">📊</text>
-    <text x="945" y="423" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Report</text>
-    <text x="945" y="440" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#2C3E50">Templates</text>
-    <text x="905" y="465" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7F8C8D">• Executive • Detailed</text>
-  </g>
+  <rect x="30" y="400" width="540" height="70" rx="10" fill="#F0FDF4" stroke="#86EFAC" stroke-width="2"/>
+  <text x="300" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534">Sequential Agent Flow with Context Passing</text>
+  <text x="300" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#15803D">Profile Data - Validate Rules - Detect Anomalies - Write Report - Polish for Executives</text>
   
-  <!-- LLM Section -->
-  <rect x="320" y="470" width="200" height="50" rx="8" fill="#F8F9FA" stroke="#E0E0E0" stroke-width="1"/>
-  <text x="350" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#5D6D7E">🤖 GPT-4o / Claude 3</text>
-  <text x="470" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#95A5A6">LLM</text>
+  <rect x="600" y="400" width="90" height="35" rx="5" fill="#1E293B"/>
+  <text x="645" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">CrewAI</text>
   
-  <!-- CrewAI Badge -->
-  <rect x="1050" y="520" width="100" height="35" rx="6" fill="#FF6B6B"/>
-  <text x="1100" y="543" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="white" text-anchor="middle">CrewAI</text>
+  <rect x="700" y="400" width="90" height="35" rx="5" fill="#10A37F"/>
+  <text x="745" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">GPT-4o</text>
   
+  <rect x="800" y="400" width="140" height="35" rx="5" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <text x="870" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1D4ED8">CDE Analysis</text>
+  
+  <rect x="30" y="490" width="400" height="60" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="50" y="515" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">Issue Severity Levels:</text>
+  <circle cx="170" cy="512" r="8" fill="#DC2626"/>
+  <text x="185" y="516" font-family="Arial, sans-serif" font-size="10" fill="#64748B">CRITICAL</text>
+  <circle cx="255" cy="512" r="8" fill="#F97316"/>
+  <text x="270" y="516" font-family="Arial, sans-serif" font-size="10" fill="#64748B">HIGH</text>
+  <circle cx="320" cy="512" r="8" fill="#EAB308"/>
+  <text x="335" y="516" font-family="Arial, sans-serif" font-size="10" fill="#64748B">MEDIUM</text>
+  <circle cx="400" cy="512" r="8" fill="#22C55E"/>
+  <text x="415" y="516" font-family="Arial, sans-serif" font-size="10" fill="#64748B">LOW</text>
+  
+  <rect x="450" y="490" width="200" height="60" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="550" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">Quality Scores (0-100)</text>
+  <text x="550" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Overall DQ Score | CDE Quality Score</text>
 </svg>
